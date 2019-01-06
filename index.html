@@ -8,37 +8,8 @@
 </head>
 <body>
     
-    <div id="app"></div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-
-    <script type="text/babel">
-        //Tags aninhadas
-        /*A tag DIV é necessária para envolver as outras tags
-        caso outras tags não sejam envolvidas por outra vai sangrar*/
-        var Title = React.createClass({
-            render: function () {
-                return (
-                    <div>
-                        <h1><span>Hello World Title Aninhado</span></h1>
-                        <h2>Hello World envolvido pela div</h2>
-                    </div>
-                )
-            }
-        })
-
-        ReactDOM.render(
-
-            <Title />,
-            document.getElementById('app')
-
-        )
-
-       
-        
-    </script>
+    <script src="/dist/bundle.js"></script>
+    
 
 </body>
 </html>
